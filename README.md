@@ -12,6 +12,10 @@
     return @"v3";
 }
 
+
+
+
+
 2.创建接口 （可以就一个接口一个类）
 Custom an APIManager
 
@@ -37,6 +41,11 @@ Implement all methods of AZAPIManager
 }
 
 
+
+
+
+
+
 3.创建请求类
 @property (nonatomic, strong) TestAPIManager *testAPIManager;
 
@@ -49,6 +58,10 @@ Implement all methods of AZAPIManager
     }
     return _testAPIManager;
 }
+
+
+
+
 实现代理方法  3个 上传的数据  成功 失败
 Implement methods of AZAPIManagerParamSource and AZAPIManagerCallBackDelegate
 
@@ -58,7 +71,9 @@ Implement methods of AZAPIManagerParamSource and AZAPIManagerCallBackDelegate
     return parmas;
 }
 
-#pragma mark - AZAPIManagerCallBackDelegate
+
+
+#pragma mark - AZAPIManagerCallBackDelegate 
 - (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager
 {
     //do something
@@ -67,6 +82,9 @@ Implement methods of AZAPIManagerParamSource and AZAPIManagerCallBackDelegate
 {
     //do something
 }
+
+
+
 
 5.调用 
 
