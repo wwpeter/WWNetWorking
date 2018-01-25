@@ -1,0 +1,28 @@
+//
+//  Wzbao-Prefix.pch
+//  Wzbao
+//
+//  Created by WangWei on 15/10/12.
+//  Copyright © 2015年 WZBaoWW. All rights reserved.
+//
+
+#ifndef Wzbao_Prefix_pch
+#define Wzbao_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "WZBMarcos.h"
+#import <Masonry/Masonry.h>
+#import "UIViewController+Hud.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+//#import "WZBUserCache.h"
+#import "NSString+LangExt.h"
+
+#if DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#endif /* Wzbao_Prefix_pch */

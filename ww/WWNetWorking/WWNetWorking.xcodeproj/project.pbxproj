@@ -1,0 +1,1176 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AD8371E2019E1B400E95923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8371D2019E1B400E95923 /* AppDelegate.m */; };
+		4AD837242019E1B400E95923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837222019E1B400E95923 /* Main.storyboard */; };
+		4AD837262019E1B400E95923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837252019E1B400E95923 /* Assets.xcassets */; };
+		4AD837292019E1B400E95923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837272019E1B400E95923 /* LaunchScreen.storyboard */; };
+		4AD8372C2019E1B400E95923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8372B2019E1B400E95923 /* main.m */; };
+		4AD837362019E1B400E95923 /* WWNetWorkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837352019E1B400E95923 /* WWNetWorkingTests.m */; };
+		4AD837412019E1B400E95923 /* WWNetWorkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837402019E1B400E95923 /* WWNetWorkingUITests.m */; };
+		4AD837AA2019E37E00E95923 /* Extern+Str.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837502019E37E00E95923 /* Extern+Str.m */; };
+		4AD837AB2019E37E00E95923 /* NSString+LangExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837522019E37E00E95923 /* NSString+LangExt.m */; };
+		4AD837AC2019E37E00E95923 /* WZBLoginAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8375A2019E37E00E95923 /* WZBLoginAPIManager.m */; };
+		4AD837AE2019E37E00E95923 /* WZBBaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8375F2019E37E00E95923 /* WZBBaseAPIManager.m */; };
+		4AD837AF2019E37E00E95923 /* WZBPagingAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837612019E37E00E95923 /* WZBPagingAPIManager.m */; };
+		4AD837B02019E37E00E95923 /* AZCommonParamsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837652019E37E00E95923 /* AZCommonParamsGenerator.m */; };
+		4AD837B12019E37E00E95923 /* AZRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837672019E37E00E95923 /* AZRequestGenerator.m */; };
+		4AD837B22019E37E00E95923 /* AZSignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837692019E37E00E95923 /* AZSignatureGenerator.m */; };
+		4AD837B32019E37E00E95923 /* AZUDIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8376B2019E37E00E95923 /* AZUDIDGenerator.m */; };
+		4AD837B42019E37E00E95923 /* NSArray+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837702019E37E00E95923 /* NSArray+AZNetworkingMethods.m */; };
+		4AD837B52019E37E00E95923 /* NSDictionary+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837722019E37E00E95923 /* NSDictionary+AZNetworkingMethods.m */; };
+		4AD837B62019E37E00E95923 /* NSMutableString+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837742019E37E00E95923 /* NSMutableString+AZNetworkingMethods.m */; };
+		4AD837B72019E37E00E95923 /* NSObject+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837762019E37E00E95923 /* NSObject+AZNetworkingMethods.m */; };
+		4AD837B82019E37E00E95923 /* NSString+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837782019E37E00E95923 /* NSString+AZNetworkingMethods.m */; };
+		4AD837B92019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8377A2019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.m */; };
+		4AD837BA2019E37E00E95923 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8377C2019E37E00E95923 /* UIDevice+IdentifierAddition.m */; };
+		4AD837BB2019E37E00E95923 /* AZAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8377F2019E37E00E95923 /* AZAPIBaseManager.m */; };
+		4AD837BC2019E37E00E95923 /* AZAPIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837812019E37E00E95923 /* AZAPIProxy.m */; };
+		4AD837BD2019E37E00E95923 /* AZAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837832019E37E00E95923 /* AZAppContext.m */; };
+		4AD837BE2019E37E00E95923 /* AZURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837852019E37E00E95923 /* AZURLResponse.m */; };
+		4AD837BF2019E37E00E95923 /* AZCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837882019E37E00E95923 /* AZCache.m */; };
+		4AD837C02019E37E00E95923 /* AZCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8378A2019E37E00E95923 /* AZCachedObject.m */; };
+		4AD837C12019E37E00E95923 /* AZLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8378D2019E37E00E95923 /* AZLogger.m */; };
+		4AD837C22019E37E00E95923 /* AZLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8378F2019E37E00E95923 /* AZLoggerConfiguration.m */; };
+		4AD837C42019E37E00E95923 /* WZBErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837942019E37E00E95923 /* WZBErrorManager.m */; };
+		4AD837C52019E37E00E95923 /* AZService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837972019E37E00E95923 /* AZService.m */; };
+		4AD837C62019E37E00E95923 /* AZServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837992019E37E00E95923 /* AZServiceFactory.m */; };
+		4AD837C72019E37E00E95923 /* WZBCustodyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8379C2019E37E00E95923 /* WZBCustodyService.m */; };
+		4AD837C82019E37E00E95923 /* WZBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8379E2019E37E00E95923 /* WZBService.m */; };
+		4AD837C92019E37E00E95923 /* WZBNetworkMonitoringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837A02019E37E00E95923 /* WZBNetworkMonitoringTool.m */; };
+		4AD837CA2019E37E00E95923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837A92019E37E00E95923 /* ViewController.m */; };
+		4AD837CD2019E3F900E95923 /* DWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837CB2019E3F900E95923 /* DWTabBarController.m */; };
+		4AD837D22019E40600E95923 /* DWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837CE2019E40600E95923 /* DWTabBar.m */; };
+		4AD837D32019E40600E95923 /* DWPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837D12019E40600E95923 /* DWPublishButton.m */; };
+		4AD837D62019E43300E95923 /* WZBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837D52019E43300E95923 /* WZBHomeViewController.m */; };
+		4AD837D92019E44500E95923 /* WZBFinancialLisController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837D82019E44500E95923 /* WZBFinancialLisController.m */; };
+		4AD837DC2019E45F00E95923 /* WZBMyAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837DB2019E45F00E95923 /* WZBMyAssetViewController.m */; };
+		4AD837DF2019E47200E95923 /* WZBPersonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837DE2019E47200E95923 /* WZBPersonCenterViewController.m */; };
+		4AD837E52019E5D400E95923 /* UIViewController+Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837E42019E5D400E95923 /* UIViewController+Hud.m */; };
+		4AD837E82019E61A00E95923 /* WZBFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837E72019E61A00E95923 /* WZBFirstView.m */; };
+		4AD837EB2019E63000E95923 /* WZBMyTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837E92019E63000E95923 /* WZBMyTitleView.m */; };
+		4AD837EE2019E70000E95923 /* WZBFinanceListAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837EC2019E70000E95923 /* WZBFinanceListAPIManager.m */; };
+		4AD837F32019E71C00E95923 /* WZBFinancialListRepaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837F02019E71C00E95923 /* WZBFinancialListRepaymentCell.m */; };
+		4AD837F42019E71C00E95923 /* WZBFinancialListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837F12019E71C00E95923 /* WZBFinancialListTableViewCell.m */; };
+		4AD837F72019EA6E00E95923 /* WZBBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD837F62019EA6E00E95923 /* WZBBrandViewController.m */; };
+		4AD838062019EB0500E95923 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837FA2019EB0500E95923 /* Default-568h@2x.png */; };
+		4AD838072019EB0500E95923 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837FB2019EB0500E95923 /* Default.png */; };
+		4AD838082019EB0500E95923 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837FC2019EB0500E95923 /* Default@2x.png */; };
+		4AD838092019EB0500E95923 /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837FD2019EB0500E95923 /* Default@3x.png */; };
+		4AD8380A2019EB0500E95923 /* iPhone X.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD837FE2019EB0500E95923 /* iPhone X.png */; };
+		4AD8380B2019EB0500E95923 /* BZ_tabbar_brand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838002019EB0500E95923 /* BZ_tabbar_brand@2x.png */; };
+		4AD8380C2019EB0500E95923 /* BZ_tabbar_brand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838012019EB0500E95923 /* BZ_tabbar_brand@3x.png */; };
+		4AD8380D2019EB0500E95923 /* BZ_tabbar_myrich@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838022019EB0500E95923 /* BZ_tabbar_myrich@2x.png */; };
+		4AD8380E2019EB0500E95923 /* BZ_tabbar_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838032019EB0500E95923 /* BZ_tabbar_share@2x.png */; };
+		4AD8380F2019EB0500E95923 /* BZ_tabbarFinancial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838042019EB0500E95923 /* BZ_tabbarFinancial@2x.png */; };
+		4AD838102019EB0500E95923 /* BZ_tabbarjx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD838052019EB0500E95923 /* BZ_tabbarjx@2x.png */; };
+		4AD838132019EBE600E95923 /* WZBRecommendAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD838112019EBE600E95923 /* WZBRecommendAPIManager.m */; };
+		F3CF9890D96BCC2D9F3CE582 /* libPods-WWNetWorking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FADD3F0B0B3527696EE66F7 /* libPods-WWNetWorking.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AD837322019E1B400E95923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD837112019E1B400E95923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD837182019E1B400E95923;
+			remoteInfo = WWNetWorking;
+		};
+		4AD8373D2019E1B400E95923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD837112019E1B400E95923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD837182019E1B400E95923;
+			remoteInfo = WWNetWorking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BFBF10BDEEC11E97818125C /* Pods-WWNetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWNetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWNetWorking/Pods-WWNetWorking.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD837192019E1B400E95923 /* WWNetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWNetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD8371C2019E1B400E95923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AD8371D2019E1B400E95923 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AD837232019E1B400E95923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AD837252019E1B400E95923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AD837282019E1B400E95923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AD8372A2019E1B400E95923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD8372B2019E1B400E95923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AD837312019E1B400E95923 /* WWNetWorkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWNetWorkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD837352019E1B400E95923 /* WWNetWorkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWNetWorkingTests.m; sourceTree = "<group>"; };
+		4AD837372019E1B400E95923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD8373C2019E1B400E95923 /* WWNetWorkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWNetWorkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD837402019E1B400E95923 /* WWNetWorkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWNetWorkingUITests.m; sourceTree = "<group>"; };
+		4AD837422019E1B400E95923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD8374F2019E37E00E95923 /* Extern+Str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extern+Str.h"; sourceTree = "<group>"; };
+		4AD837502019E37E00E95923 /* Extern+Str.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Extern+Str.m"; sourceTree = "<group>"; };
+		4AD837512019E37E00E95923 /* NSString+LangExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LangExt.h"; sourceTree = "<group>"; };
+		4AD837522019E37E00E95923 /* NSString+LangExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LangExt.m"; sourceTree = "<group>"; };
+		4AD837592019E37E00E95923 /* WZBLoginAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBLoginAPIManager.h; sourceTree = "<group>"; };
+		4AD8375A2019E37E00E95923 /* WZBLoginAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBLoginAPIManager.m; sourceTree = "<group>"; };
+		4AD8375E2019E37E00E95923 /* WZBBaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBBaseAPIManager.h; sourceTree = "<group>"; };
+		4AD8375F2019E37E00E95923 /* WZBBaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBBaseAPIManager.m; sourceTree = "<group>"; };
+		4AD837602019E37E00E95923 /* WZBPagingAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBPagingAPIManager.h; sourceTree = "<group>"; };
+		4AD837612019E37E00E95923 /* WZBPagingAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBPagingAPIManager.m; sourceTree = "<group>"; };
+		4AD837642019E37E00E95923 /* AZCommonParamsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCommonParamsGenerator.h; sourceTree = "<group>"; };
+		4AD837652019E37E00E95923 /* AZCommonParamsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZCommonParamsGenerator.m; sourceTree = "<group>"; };
+		4AD837662019E37E00E95923 /* AZRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZRequestGenerator.h; sourceTree = "<group>"; };
+		4AD837672019E37E00E95923 /* AZRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZRequestGenerator.m; sourceTree = "<group>"; };
+		4AD837682019E37E00E95923 /* AZSignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZSignatureGenerator.h; sourceTree = "<group>"; };
+		4AD837692019E37E00E95923 /* AZSignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZSignatureGenerator.m; sourceTree = "<group>"; };
+		4AD8376A2019E37E00E95923 /* AZUDIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZUDIDGenerator.h; sourceTree = "<group>"; };
+		4AD8376B2019E37E00E95923 /* AZUDIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZUDIDGenerator.m; sourceTree = "<group>"; };
+		4AD8376C2019E37E00E95923 /* AZNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZNetworking.h; sourceTree = "<group>"; };
+		4AD8376D2019E37E00E95923 /* AZNetworkingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZNetworkingConfiguration.h; sourceTree = "<group>"; };
+		4AD8376F2019E37E00E95923 /* NSArray+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD837702019E37E00E95923 /* NSArray+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD837712019E37E00E95923 /* NSDictionary+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD837722019E37E00E95923 /* NSDictionary+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD837732019E37E00E95923 /* NSMutableString+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD837742019E37E00E95923 /* NSMutableString+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD837752019E37E00E95923 /* NSObject+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD837762019E37E00E95923 /* NSObject+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD837772019E37E00E95923 /* NSString+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD837782019E37E00E95923 /* NSString+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD837792019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+AZNetworkingMethods.h"; sourceTree = "<group>"; };
+		4AD8377A2019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+AZNetworkingMethods.m"; sourceTree = "<group>"; };
+		4AD8377B2019E37E00E95923 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		4AD8377C2019E37E00E95923 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		4AD8377E2019E37E00E95923 /* AZAPIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPIBaseManager.h; sourceTree = "<group>"; };
+		4AD8377F2019E37E00E95923 /* AZAPIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPIBaseManager.m; sourceTree = "<group>"; };
+		4AD837802019E37E00E95923 /* AZAPIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPIProxy.h; sourceTree = "<group>"; };
+		4AD837812019E37E00E95923 /* AZAPIProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPIProxy.m; sourceTree = "<group>"; };
+		4AD837822019E37E00E95923 /* AZAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAppContext.h; sourceTree = "<group>"; };
+		4AD837832019E37E00E95923 /* AZAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAppContext.m; sourceTree = "<group>"; };
+		4AD837842019E37E00E95923 /* AZURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZURLResponse.h; sourceTree = "<group>"; };
+		4AD837852019E37E00E95923 /* AZURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZURLResponse.m; sourceTree = "<group>"; };
+		4AD837872019E37E00E95923 /* AZCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCache.h; sourceTree = "<group>"; };
+		4AD837882019E37E00E95923 /* AZCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZCache.m; sourceTree = "<group>"; };
+		4AD837892019E37E00E95923 /* AZCachedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCachedObject.h; sourceTree = "<group>"; };
+		4AD8378A2019E37E00E95923 /* AZCachedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZCachedObject.m; sourceTree = "<group>"; };
+		4AD8378C2019E37E00E95923 /* AZLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLogger.h; sourceTree = "<group>"; };
+		4AD8378D2019E37E00E95923 /* AZLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLogger.m; sourceTree = "<group>"; };
+		4AD8378E2019E37E00E95923 /* AZLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLoggerConfiguration.h; sourceTree = "<group>"; };
+		4AD8378F2019E37E00E95923 /* AZLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLoggerConfiguration.m; sourceTree = "<group>"; };
+		4AD837932019E37E00E95923 /* WZBErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBErrorManager.h; sourceTree = "<group>"; };
+		4AD837942019E37E00E95923 /* WZBErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBErrorManager.m; sourceTree = "<group>"; };
+		4AD837962019E37E00E95923 /* AZService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZService.h; sourceTree = "<group>"; };
+		4AD837972019E37E00E95923 /* AZService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZService.m; sourceTree = "<group>"; };
+		4AD837982019E37E00E95923 /* AZServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZServiceFactory.h; sourceTree = "<group>"; };
+		4AD837992019E37E00E95923 /* AZServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZServiceFactory.m; sourceTree = "<group>"; };
+		4AD8379B2019E37E00E95923 /* WZBCustodyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBCustodyService.h; sourceTree = "<group>"; };
+		4AD8379C2019E37E00E95923 /* WZBCustodyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBCustodyService.m; sourceTree = "<group>"; };
+		4AD8379D2019E37E00E95923 /* WZBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBService.h; sourceTree = "<group>"; };
+		4AD8379E2019E37E00E95923 /* WZBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBService.m; sourceTree = "<group>"; };
+		4AD8379F2019E37E00E95923 /* WZBNetworkMonitoringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBNetworkMonitoringTool.h; sourceTree = "<group>"; };
+		4AD837A02019E37E00E95923 /* WZBNetworkMonitoringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBNetworkMonitoringTool.m; sourceTree = "<group>"; };
+		4AD837A82019E37E00E95923 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AD837A92019E37E00E95923 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AD837CB2019E3F900E95923 /* DWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBarController.m; sourceTree = "<group>"; };
+		4AD837CC2019E3F900E95923 /* DWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBarController.h; sourceTree = "<group>"; };
+		4AD837CE2019E40600E95923 /* DWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBar.m; sourceTree = "<group>"; };
+		4AD837CF2019E40600E95923 /* DWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBar.h; sourceTree = "<group>"; };
+		4AD837D02019E40600E95923 /* DWPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPublishButton.h; sourceTree = "<group>"; };
+		4AD837D12019E40600E95923 /* DWPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPublishButton.m; sourceTree = "<group>"; };
+		4AD837D42019E43300E95923 /* WZBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBHomeViewController.h; sourceTree = "<group>"; };
+		4AD837D52019E43300E95923 /* WZBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBHomeViewController.m; sourceTree = "<group>"; };
+		4AD837D72019E44500E95923 /* WZBFinancialLisController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBFinancialLisController.h; sourceTree = "<group>"; };
+		4AD837D82019E44500E95923 /* WZBFinancialLisController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBFinancialLisController.m; sourceTree = "<group>"; };
+		4AD837DA2019E45F00E95923 /* WZBMyAssetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBMyAssetViewController.h; sourceTree = "<group>"; };
+		4AD837DB2019E45F00E95923 /* WZBMyAssetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBMyAssetViewController.m; sourceTree = "<group>"; };
+		4AD837DD2019E47200E95923 /* WZBPersonCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBPersonCenterViewController.h; sourceTree = "<group>"; };
+		4AD837DE2019E47200E95923 /* WZBPersonCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBPersonCenterViewController.m; sourceTree = "<group>"; };
+		4AD837E02019E4E200E95923 /* Wzbao-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wzbao-Prefix.pch"; sourceTree = "<group>"; };
+		4AD837E22019E5BC00E95923 /* WZBMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBMarcos.h; sourceTree = "<group>"; };
+		4AD837E32019E5D400E95923 /* UIViewController+Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hud.h"; sourceTree = "<group>"; };
+		4AD837E42019E5D400E95923 /* UIViewController+Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hud.m"; sourceTree = "<group>"; };
+		4AD837E62019E61A00E95923 /* WZBFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBFirstView.h; sourceTree = "<group>"; };
+		4AD837E72019E61A00E95923 /* WZBFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBFirstView.m; sourceTree = "<group>"; };
+		4AD837E92019E63000E95923 /* WZBMyTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBMyTitleView.m; sourceTree = "<group>"; };
+		4AD837EA2019E63000E95923 /* WZBMyTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBMyTitleView.h; sourceTree = "<group>"; };
+		4AD837EC2019E70000E95923 /* WZBFinanceListAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBFinanceListAPIManager.m; sourceTree = "<group>"; };
+		4AD837ED2019E70000E95923 /* WZBFinanceListAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBFinanceListAPIManager.h; sourceTree = "<group>"; };
+		4AD837EF2019E71C00E95923 /* WZBFinancialListRepaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBFinancialListRepaymentCell.h; sourceTree = "<group>"; };
+		4AD837F02019E71C00E95923 /* WZBFinancialListRepaymentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBFinancialListRepaymentCell.m; sourceTree = "<group>"; };
+		4AD837F12019E71C00E95923 /* WZBFinancialListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBFinancialListTableViewCell.m; sourceTree = "<group>"; };
+		4AD837F22019E71C00E95923 /* WZBFinancialListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBFinancialListTableViewCell.h; sourceTree = "<group>"; };
+		4AD837F52019EA6E00E95923 /* WZBBrandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZBBrandViewController.h; sourceTree = "<group>"; };
+		4AD837F62019EA6E00E95923 /* WZBBrandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZBBrandViewController.m; sourceTree = "<group>"; };
+		4AD837FA2019EB0500E95923 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4AD837FB2019EB0500E95923 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4AD837FC2019EB0500E95923 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4AD837FD2019EB0500E95923 /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = "<group>"; };
+		4AD837FE2019EB0500E95923 /* iPhone X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone X.png"; sourceTree = "<group>"; };
+		4AD838002019EB0500E95923 /* BZ_tabbar_brand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbar_brand@2x.png"; sourceTree = "<group>"; };
+		4AD838012019EB0500E95923 /* BZ_tabbar_brand@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbar_brand@3x.png"; sourceTree = "<group>"; };
+		4AD838022019EB0500E95923 /* BZ_tabbar_myrich@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbar_myrich@2x.png"; sourceTree = "<group>"; };
+		4AD838032019EB0500E95923 /* BZ_tabbar_share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbar_share@2x.png"; sourceTree = "<group>"; };
+		4AD838042019EB0500E95923 /* BZ_tabbarFinancial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbarFinancial@2x.png"; sourceTree = "<group>"; };
+		4AD838052019EB0500E95923 /* BZ_tabbarjx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BZ_tabbarjx@2x.png"; sourceTree = "<group>"; };
+		4AD838112019EBE600E95923 /* WZBRecommendAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBRecommendAPIManager.m; sourceTree = "<group>"; };
+		4AD838122019EBE600E95923 /* WZBRecommendAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBRecommendAPIManager.h; sourceTree = "<group>"; };
+		6FADD3F0B0B3527696EE66F7 /* libPods-WWNetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WWNetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF00A4F0C0DC8F73B1068059 /* Pods-WWNetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWNetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWNetWorking/Pods-WWNetWorking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AD837162019E1B400E95923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF9890D96BCC2D9F3CE582 /* libPods-WWNetWorking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD8372E2019E1B400E95923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD837392019E1B400E95923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AD837102019E1B400E95923 = {
+			isa = PBXGroup;
+			children = (
+				4AD8371B2019E1B400E95923 /* WWNetWorking */,
+				4AD837342019E1B400E95923 /* WWNetWorkingTests */,
+				4AD8373F2019E1B400E95923 /* WWNetWorkingUITests */,
+				4AD8371A2019E1B400E95923 /* Products */,
+				71D15CBD6F2010F7AB06D8CC /* Pods */,
+				67BDDA52C99DBFA20A6CD55A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AD8371A2019E1B400E95923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837192019E1B400E95923 /* WWNetWorking.app */,
+				4AD837312019E1B400E95923 /* WWNetWorkingTests.xctest */,
+				4AD8373C2019E1B400E95923 /* WWNetWorkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AD8371B2019E1B400E95923 /* WWNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837F82019EB0500E95923 /* ImageSrc */,
+				4AD837E12019E5A000E95923 /* Tools */,
+				4AD8374E2019E37E00E95923 /* Categories */,
+				4AD837A12019E37E00E95923 /* Controller */,
+				4AD837532019E37E00E95923 /* NetworkCenter */,
+				4AD8371C2019E1B400E95923 /* AppDelegate.h */,
+				4AD8371D2019E1B400E95923 /* AppDelegate.m */,
+				4AD837222019E1B400E95923 /* Main.storyboard */,
+				4AD837252019E1B400E95923 /* Assets.xcassets */,
+				4AD837272019E1B400E95923 /* LaunchScreen.storyboard */,
+				4AD837E02019E4E200E95923 /* Wzbao-Prefix.pch */,
+				4AD8372A2019E1B400E95923 /* Info.plist */,
+				4AD8372B2019E1B400E95923 /* main.m */,
+			);
+			path = WWNetWorking;
+			sourceTree = "<group>";
+		};
+		4AD837342019E1B400E95923 /* WWNetWorkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837352019E1B400E95923 /* WWNetWorkingTests.m */,
+				4AD837372019E1B400E95923 /* Info.plist */,
+			);
+			path = WWNetWorkingTests;
+			sourceTree = "<group>";
+		};
+		4AD8373F2019E1B400E95923 /* WWNetWorkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837402019E1B400E95923 /* WWNetWorkingUITests.m */,
+				4AD837422019E1B400E95923 /* Info.plist */,
+			);
+			path = WWNetWorkingUITests;
+			sourceTree = "<group>";
+		};
+		4AD8374E2019E37E00E95923 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837512019E37E00E95923 /* NSString+LangExt.h */,
+				4AD837522019E37E00E95923 /* NSString+LangExt.m */,
+				4AD837E32019E5D400E95923 /* UIViewController+Hud.h */,
+				4AD837E42019E5D400E95923 /* UIViewController+Hud.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4AD837532019E37E00E95923 /* NetworkCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837542019E37E00E95923 /* APIManagers */,
+				4AD837622019E37E00E95923 /* Foundation */,
+			);
+			path = NetworkCenter;
+			sourceTree = "<group>";
+		};
+		4AD837542019E37E00E95923 /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837552019E37E00E95923 /* WZBAPIManager */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		4AD837552019E37E00E95923 /* WZBAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837562019E37E00E95923 /* Financial */,
+				4AD837572019E37E00E95923 /* HomePage */,
+				4AD837582019E37E00E95923 /* Login */,
+				4AD8375B2019E37E00E95923 /* Paging */,
+				4AD8375E2019E37E00E95923 /* WZBBaseAPIManager.h */,
+				4AD8375F2019E37E00E95923 /* WZBBaseAPIManager.m */,
+				4AD837602019E37E00E95923 /* WZBPagingAPIManager.h */,
+				4AD837612019E37E00E95923 /* WZBPagingAPIManager.m */,
+			);
+			path = WZBAPIManager;
+			sourceTree = "<group>";
+		};
+		4AD837562019E37E00E95923 /* Financial */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837ED2019E70000E95923 /* WZBFinanceListAPIManager.h */,
+				4AD837EC2019E70000E95923 /* WZBFinanceListAPIManager.m */,
+			);
+			path = Financial;
+			sourceTree = "<group>";
+		};
+		4AD837572019E37E00E95923 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4AD838122019EBE600E95923 /* WZBRecommendAPIManager.h */,
+				4AD838112019EBE600E95923 /* WZBRecommendAPIManager.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4AD837582019E37E00E95923 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837592019E37E00E95923 /* WZBLoginAPIManager.h */,
+				4AD8375A2019E37E00E95923 /* WZBLoginAPIManager.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4AD8375B2019E37E00E95923 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Paging;
+			sourceTree = "<group>";
+		};
+		4AD837622019E37E00E95923 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4AD8376C2019E37E00E95923 /* AZNetworking.h */,
+				4AD8376D2019E37E00E95923 /* AZNetworkingConfiguration.h */,
+				4AD8379F2019E37E00E95923 /* WZBNetworkMonitoringTool.h */,
+				4AD837A02019E37E00E95923 /* WZBNetworkMonitoringTool.m */,
+				4AD837632019E37E00E95923 /* Assistants */,
+				4AD8376E2019E37E00E95923 /* Categories */,
+				4AD8377D2019E37E00E95923 /* Components */,
+				4AD837922019E37E00E95923 /* Error */,
+				4AD837952019E37E00E95923 /* Services */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4AD837632019E37E00E95923 /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837642019E37E00E95923 /* AZCommonParamsGenerator.h */,
+				4AD837652019E37E00E95923 /* AZCommonParamsGenerator.m */,
+				4AD837662019E37E00E95923 /* AZRequestGenerator.h */,
+				4AD837672019E37E00E95923 /* AZRequestGenerator.m */,
+				4AD837682019E37E00E95923 /* AZSignatureGenerator.h */,
+				4AD837692019E37E00E95923 /* AZSignatureGenerator.m */,
+				4AD8376A2019E37E00E95923 /* AZUDIDGenerator.h */,
+				4AD8376B2019E37E00E95923 /* AZUDIDGenerator.m */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		4AD8376E2019E37E00E95923 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4AD8376F2019E37E00E95923 /* NSArray+AZNetworkingMethods.h */,
+				4AD837702019E37E00E95923 /* NSArray+AZNetworkingMethods.m */,
+				4AD837712019E37E00E95923 /* NSDictionary+AZNetworkingMethods.h */,
+				4AD837722019E37E00E95923 /* NSDictionary+AZNetworkingMethods.m */,
+				4AD837732019E37E00E95923 /* NSMutableString+AZNetworkingMethods.h */,
+				4AD837742019E37E00E95923 /* NSMutableString+AZNetworkingMethods.m */,
+				4AD837752019E37E00E95923 /* NSObject+AZNetworkingMethods.h */,
+				4AD837762019E37E00E95923 /* NSObject+AZNetworkingMethods.m */,
+				4AD837772019E37E00E95923 /* NSString+AZNetworkingMethods.h */,
+				4AD837782019E37E00E95923 /* NSString+AZNetworkingMethods.m */,
+				4AD837792019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.h */,
+				4AD8377A2019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.m */,
+				4AD8377B2019E37E00E95923 /* UIDevice+IdentifierAddition.h */,
+				4AD8377C2019E37E00E95923 /* UIDevice+IdentifierAddition.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4AD8377D2019E37E00E95923 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4AD8377E2019E37E00E95923 /* AZAPIBaseManager.h */,
+				4AD8377F2019E37E00E95923 /* AZAPIBaseManager.m */,
+				4AD837802019E37E00E95923 /* AZAPIProxy.h */,
+				4AD837812019E37E00E95923 /* AZAPIProxy.m */,
+				4AD837822019E37E00E95923 /* AZAppContext.h */,
+				4AD837832019E37E00E95923 /* AZAppContext.m */,
+				4AD837842019E37E00E95923 /* AZURLResponse.h */,
+				4AD837852019E37E00E95923 /* AZURLResponse.m */,
+				4AD837862019E37E00E95923 /* CacheComponents */,
+				4AD8378B2019E37E00E95923 /* LogComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4AD837862019E37E00E95923 /* CacheComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837872019E37E00E95923 /* AZCache.h */,
+				4AD837882019E37E00E95923 /* AZCache.m */,
+				4AD837892019E37E00E95923 /* AZCachedObject.h */,
+				4AD8378A2019E37E00E95923 /* AZCachedObject.m */,
+			);
+			path = CacheComponents;
+			sourceTree = "<group>";
+		};
+		4AD8378B2019E37E00E95923 /* LogComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4AD8378C2019E37E00E95923 /* AZLogger.h */,
+				4AD8378D2019E37E00E95923 /* AZLogger.m */,
+				4AD8378E2019E37E00E95923 /* AZLoggerConfiguration.h */,
+				4AD8378F2019E37E00E95923 /* AZLoggerConfiguration.m */,
+			);
+			path = LogComponents;
+			sourceTree = "<group>";
+		};
+		4AD837922019E37E00E95923 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837932019E37E00E95923 /* WZBErrorManager.h */,
+				4AD837942019E37E00E95923 /* WZBErrorManager.m */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4AD837952019E37E00E95923 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837962019E37E00E95923 /* AZService.h */,
+				4AD837972019E37E00E95923 /* AZService.m */,
+				4AD837982019E37E00E95923 /* AZServiceFactory.h */,
+				4AD837992019E37E00E95923 /* AZServiceFactory.m */,
+				4AD8379A2019E37E00E95923 /* WZB */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4AD8379A2019E37E00E95923 /* WZB */ = {
+			isa = PBXGroup;
+			children = (
+				4AD8379B2019E37E00E95923 /* WZBCustodyService.h */,
+				4AD8379C2019E37E00E95923 /* WZBCustodyService.m */,
+				4AD8379D2019E37E00E95923 /* WZBService.h */,
+				4AD8379E2019E37E00E95923 /* WZBService.m */,
+			);
+			path = WZB;
+			sourceTree = "<group>";
+		};
+		4AD837A12019E37E00E95923 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837A22019E37E00E95923 /* Financial */,
+				4AD837A52019E37E00E95923 /* HomePage */,
+				4AD837A72019E37E00E95923 /* Tabbar */,
+				4AD837A82019E37E00E95923 /* ViewController.h */,
+				4AD837A92019E37E00E95923 /* ViewController.m */,
+				4AD837DA2019E45F00E95923 /* WZBMyAssetViewController.h */,
+				4AD837DB2019E45F00E95923 /* WZBMyAssetViewController.m */,
+				4AD837DD2019E47200E95923 /* WZBPersonCenterViewController.h */,
+				4AD837DE2019E47200E95923 /* WZBPersonCenterViewController.m */,
+				4AD837F52019EA6E00E95923 /* WZBBrandViewController.h */,
+				4AD837F62019EA6E00E95923 /* WZBBrandViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4AD837A22019E37E00E95923 /* Financial */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837A32019E37E00E95923 /* Cells */,
+				4AD837A42019E37E00E95923 /* Views */,
+				4AD837D72019E44500E95923 /* WZBFinancialLisController.h */,
+				4AD837D82019E44500E95923 /* WZBFinancialLisController.m */,
+			);
+			path = Financial;
+			sourceTree = "<group>";
+		};
+		4AD837A32019E37E00E95923 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837EF2019E71C00E95923 /* WZBFinancialListRepaymentCell.h */,
+				4AD837F02019E71C00E95923 /* WZBFinancialListRepaymentCell.m */,
+				4AD837F22019E71C00E95923 /* WZBFinancialListTableViewCell.h */,
+				4AD837F12019E71C00E95923 /* WZBFinancialListTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4AD837A42019E37E00E95923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AD837A52019E37E00E95923 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837A62019E37E00E95923 /* Views */,
+				4AD837D42019E43300E95923 /* WZBHomeViewController.h */,
+				4AD837D52019E43300E95923 /* WZBHomeViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4AD837A62019E37E00E95923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837EA2019E63000E95923 /* WZBMyTitleView.h */,
+				4AD837E92019E63000E95923 /* WZBMyTitleView.m */,
+				4AD837E62019E61A00E95923 /* WZBFirstView.h */,
+				4AD837E72019E61A00E95923 /* WZBFirstView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AD837A72019E37E00E95923 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837CC2019E3F900E95923 /* DWTabBarController.h */,
+				4AD837CB2019E3F900E95923 /* DWTabBarController.m */,
+				4AD837D02019E40600E95923 /* DWPublishButton.h */,
+				4AD837D12019E40600E95923 /* DWPublishButton.m */,
+				4AD837CF2019E40600E95923 /* DWTabBar.h */,
+				4AD837CE2019E40600E95923 /* DWTabBar.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4AD837E12019E5A000E95923 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837E22019E5BC00E95923 /* WZBMarcos.h */,
+				4AD8374F2019E37E00E95923 /* Extern+Str.h */,
+				4AD837502019E37E00E95923 /* Extern+Str.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4AD837F82019EB0500E95923 /* ImageSrc */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837F92019EB0500E95923 /* default */,
+				4AD837FF2019EB0500E95923 /* tabbar */,
+			);
+			path = ImageSrc;
+			sourceTree = "<group>";
+		};
+		4AD837F92019EB0500E95923 /* default */ = {
+			isa = PBXGroup;
+			children = (
+				4AD837FA2019EB0500E95923 /* Default-568h@2x.png */,
+				4AD837FB2019EB0500E95923 /* Default.png */,
+				4AD837FC2019EB0500E95923 /* Default@2x.png */,
+				4AD837FD2019EB0500E95923 /* Default@3x.png */,
+				4AD837FE2019EB0500E95923 /* iPhone X.png */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
+		4AD837FF2019EB0500E95923 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4AD838002019EB0500E95923 /* BZ_tabbar_brand@2x.png */,
+				4AD838012019EB0500E95923 /* BZ_tabbar_brand@3x.png */,
+				4AD838022019EB0500E95923 /* BZ_tabbar_myrich@2x.png */,
+				4AD838032019EB0500E95923 /* BZ_tabbar_share@2x.png */,
+				4AD838042019EB0500E95923 /* BZ_tabbarFinancial@2x.png */,
+				4AD838052019EB0500E95923 /* BZ_tabbarjx@2x.png */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		67BDDA52C99DBFA20A6CD55A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FADD3F0B0B3527696EE66F7 /* libPods-WWNetWorking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71D15CBD6F2010F7AB06D8CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BFBF10BDEEC11E97818125C /* Pods-WWNetWorking.debug.xcconfig */,
+				FF00A4F0C0DC8F73B1068059 /* Pods-WWNetWorking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AD837182019E1B400E95923 /* WWNetWorking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD837452019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorking" */;
+			buildPhases = (
+				DF63D11738A70231878A0E1C /* [CP] Check Pods Manifest.lock */,
+				4AD837152019E1B400E95923 /* Sources */,
+				4AD837162019E1B400E95923 /* Frameworks */,
+				4AD837172019E1B400E95923 /* Resources */,
+				47EA3B69DA949DA64FE90E32 /* [CP] Embed Pods Frameworks */,
+				1362765EA0CCF701DEC790B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWNetWorking;
+			productName = WWNetWorking;
+			productReference = 4AD837192019E1B400E95923 /* WWNetWorking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AD837302019E1B400E95923 /* WWNetWorkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD837482019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorkingTests" */;
+			buildPhases = (
+				4AD8372D2019E1B400E95923 /* Sources */,
+				4AD8372E2019E1B400E95923 /* Frameworks */,
+				4AD8372F2019E1B400E95923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD837332019E1B400E95923 /* PBXTargetDependency */,
+			);
+			name = WWNetWorkingTests;
+			productName = WWNetWorkingTests;
+			productReference = 4AD837312019E1B400E95923 /* WWNetWorkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AD8373B2019E1B400E95923 /* WWNetWorkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD8374B2019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorkingUITests" */;
+			buildPhases = (
+				4AD837382019E1B400E95923 /* Sources */,
+				4AD837392019E1B400E95923 /* Frameworks */,
+				4AD8373A2019E1B400E95923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD8373E2019E1B400E95923 /* PBXTargetDependency */,
+			);
+			name = WWNetWorkingUITests;
+			productName = WWNetWorkingUITests;
+			productReference = 4AD8373C2019E1B400E95923 /* WWNetWorkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AD837112019E1B400E95923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "wangwei-WW";
+				TargetAttributes = {
+					4AD837182019E1B400E95923 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4AD837302019E1B400E95923 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AD837182019E1B400E95923;
+					};
+					4AD8373B2019E1B400E95923 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AD837182019E1B400E95923;
+					};
+				};
+			};
+			buildConfigurationList = 4AD837142019E1B400E95923 /* Build configuration list for PBXProject "WWNetWorking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AD837102019E1B400E95923;
+			productRefGroup = 4AD8371A2019E1B400E95923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AD837182019E1B400E95923 /* WWNetWorking */,
+				4AD837302019E1B400E95923 /* WWNetWorkingTests */,
+				4AD8373B2019E1B400E95923 /* WWNetWorkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AD837172019E1B400E95923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD838082019EB0500E95923 /* Default@2x.png in Resources */,
+				4AD837292019E1B400E95923 /* LaunchScreen.storyboard in Resources */,
+				4AD838102019EB0500E95923 /* BZ_tabbarjx@2x.png in Resources */,
+				4AD8380A2019EB0500E95923 /* iPhone X.png in Resources */,
+				4AD838062019EB0500E95923 /* Default-568h@2x.png in Resources */,
+				4AD8380D2019EB0500E95923 /* BZ_tabbar_myrich@2x.png in Resources */,
+				4AD837262019E1B400E95923 /* Assets.xcassets in Resources */,
+				4AD8380C2019EB0500E95923 /* BZ_tabbar_brand@3x.png in Resources */,
+				4AD8380B2019EB0500E95923 /* BZ_tabbar_brand@2x.png in Resources */,
+				4AD8380F2019EB0500E95923 /* BZ_tabbarFinancial@2x.png in Resources */,
+				4AD8380E2019EB0500E95923 /* BZ_tabbar_share@2x.png in Resources */,
+				4AD837242019E1B400E95923 /* Main.storyboard in Resources */,
+				4AD838072019EB0500E95923 /* Default.png in Resources */,
+				4AD838092019EB0500E95923 /* Default@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD8372F2019E1B400E95923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD8373A2019E1B400E95923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1362765EA0CCF701DEC790B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWNetWorking/Pods-WWNetWorking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47EA3B69DA949DA64FE90E32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWNetWorking/Pods-WWNetWorking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF63D11738A70231878A0E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AD837152019E1B400E95923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD837BB2019E37E00E95923 /* AZAPIBaseManager.m in Sources */,
+				4AD837AE2019E37E00E95923 /* WZBBaseAPIManager.m in Sources */,
+				4AD837D92019E44500E95923 /* WZBFinancialLisController.m in Sources */,
+				4AD837AA2019E37E00E95923 /* Extern+Str.m in Sources */,
+				4AD837BF2019E37E00E95923 /* AZCache.m in Sources */,
+				4AD837D32019E40600E95923 /* DWPublishButton.m in Sources */,
+				4AD837C92019E37E00E95923 /* WZBNetworkMonitoringTool.m in Sources */,
+				4AD837C02019E37E00E95923 /* AZCachedObject.m in Sources */,
+				4AD837D22019E40600E95923 /* DWTabBar.m in Sources */,
+				4AD837B82019E37E00E95923 /* NSString+AZNetworkingMethods.m in Sources */,
+				4AD837B62019E37E00E95923 /* NSMutableString+AZNetworkingMethods.m in Sources */,
+				4AD837B92019E37E00E95923 /* NSURLRequest+AZNetworkingMethods.m in Sources */,
+				4AD837CD2019E3F900E95923 /* DWTabBarController.m in Sources */,
+				4AD837BD2019E37E00E95923 /* AZAppContext.m in Sources */,
+				4AD837E82019E61A00E95923 /* WZBFirstView.m in Sources */,
+				4AD837C42019E37E00E95923 /* WZBErrorManager.m in Sources */,
+				4AD837E52019E5D400E95923 /* UIViewController+Hud.m in Sources */,
+				4AD837B72019E37E00E95923 /* NSObject+AZNetworkingMethods.m in Sources */,
+				4AD837CA2019E37E00E95923 /* ViewController.m in Sources */,
+				4AD837EE2019E70000E95923 /* WZBFinanceListAPIManager.m in Sources */,
+				4AD8372C2019E1B400E95923 /* main.m in Sources */,
+				4AD837C82019E37E00E95923 /* WZBService.m in Sources */,
+				4AD837C52019E37E00E95923 /* AZService.m in Sources */,
+				4AD837B32019E37E00E95923 /* AZUDIDGenerator.m in Sources */,
+				4AD837C62019E37E00E95923 /* AZServiceFactory.m in Sources */,
+				4AD837DF2019E47200E95923 /* WZBPersonCenterViewController.m in Sources */,
+				4AD837D62019E43300E95923 /* WZBHomeViewController.m in Sources */,
+				4AD837B22019E37E00E95923 /* AZSignatureGenerator.m in Sources */,
+				4AD837B42019E37E00E95923 /* NSArray+AZNetworkingMethods.m in Sources */,
+				4AD837BC2019E37E00E95923 /* AZAPIProxy.m in Sources */,
+				4AD837C12019E37E00E95923 /* AZLogger.m in Sources */,
+				4AD837F42019E71C00E95923 /* WZBFinancialListTableViewCell.m in Sources */,
+				4AD837BE2019E37E00E95923 /* AZURLResponse.m in Sources */,
+				4AD838132019EBE600E95923 /* WZBRecommendAPIManager.m in Sources */,
+				4AD837AC2019E37E00E95923 /* WZBLoginAPIManager.m in Sources */,
+				4AD8371E2019E1B400E95923 /* AppDelegate.m in Sources */,
+				4AD837B12019E37E00E95923 /* AZRequestGenerator.m in Sources */,
+				4AD837B52019E37E00E95923 /* NSDictionary+AZNetworkingMethods.m in Sources */,
+				4AD837AF2019E37E00E95923 /* WZBPagingAPIManager.m in Sources */,
+				4AD837B02019E37E00E95923 /* AZCommonParamsGenerator.m in Sources */,
+				4AD837EB2019E63000E95923 /* WZBMyTitleView.m in Sources */,
+				4AD837F32019E71C00E95923 /* WZBFinancialListRepaymentCell.m in Sources */,
+				4AD837AB2019E37E00E95923 /* NSString+LangExt.m in Sources */,
+				4AD837C72019E37E00E95923 /* WZBCustodyService.m in Sources */,
+				4AD837F72019EA6E00E95923 /* WZBBrandViewController.m in Sources */,
+				4AD837DC2019E45F00E95923 /* WZBMyAssetViewController.m in Sources */,
+				4AD837BA2019E37E00E95923 /* UIDevice+IdentifierAddition.m in Sources */,
+				4AD837C22019E37E00E95923 /* AZLoggerConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD8372D2019E1B400E95923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD837362019E1B400E95923 /* WWNetWorkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD837382019E1B400E95923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD837412019E1B400E95923 /* WWNetWorkingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AD837332019E1B400E95923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD837182019E1B400E95923 /* WWNetWorking */;
+			targetProxy = 4AD837322019E1B400E95923 /* PBXContainerItemProxy */;
+		};
+		4AD8373E2019E1B400E95923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD837182019E1B400E95923 /* WWNetWorking */;
+			targetProxy = 4AD8373D2019E1B400E95923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AD837222019E1B400E95923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AD837232019E1B400E95923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AD837272019E1B400E95923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AD837282019E1B400E95923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AD837432019E1B400E95923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AD837442019E1B400E95923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AD837462019E1B400E95923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFBF10BDEEC11E97818125C /* Pods-WWNetWorking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "WWNetWorking/Wzbao-Prefix.pch";
+				INFOPLIST_FILE = WWNetWorking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AD837472019E1B400E95923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF00A4F0C0DC8F73B1068059 /* Pods-WWNetWorking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "WWNetWorking/Wzbao-Prefix.pch";
+				INFOPLIST_FILE = WWNetWorking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AD837492019E1B400E95923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WWNetWorkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WWNetWorking.app/WWNetWorking";
+			};
+			name = Debug;
+		};
+		4AD8374A2019E1B400E95923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WWNetWorkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WWNetWorking.app/WWNetWorking";
+			};
+			name = Release;
+		};
+		4AD8374C2019E1B400E95923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WWNetWorkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WWNetWorking;
+			};
+			name = Debug;
+		};
+		4AD8374D2019E1B400E95923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WWNetWorkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BZ-wangwei.WWNetWorkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WWNetWorking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AD837142019E1B400E95923 /* Build configuration list for PBXProject "WWNetWorking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD837432019E1B400E95923 /* Debug */,
+				4AD837442019E1B400E95923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD837452019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD837462019E1B400E95923 /* Debug */,
+				4AD837472019E1B400E95923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD837482019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD837492019E1B400E95923 /* Debug */,
+				4AD8374A2019E1B400E95923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD8374B2019E1B400E95923 /* Build configuration list for PBXNativeTarget "WWNetWorkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD8374C2019E1B400E95923 /* Debug */,
+				4AD8374D2019E1B400E95923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AD837112019E1B400E95923 /* Project object */;
+}

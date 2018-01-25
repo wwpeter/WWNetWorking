@@ -1,0 +1,22 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, ‘7.0’
+
+target ‘WWNetWorking’ do
+
+pod 'AFNetworking', '~> 3.0’
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'Reachability', '~> 3.2'
+pod 'CocoaLumberjack', '~> 2.0.1'
+pod 'iVersion', '~> 1.11.4'
+pod 'MJRefresh', '~> 2.4.7'
+pod 'Masonry', '~> 0.6.3'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'SSKeychain'
+pod 'CocoaSecurity', '~> 1.2.4'
+pod 'NSDate-Extensions', '~> 0.0.1'
+pod 'UMengAnalytics'
+pod 'YYKit'
+pod 'JPush'
+pod 'IQKeyboardManager'
+
+end
