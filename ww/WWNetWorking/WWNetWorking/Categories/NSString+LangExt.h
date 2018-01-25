@@ -25,9 +25,9 @@ BOOL isEqualString(NSString *str1, NSString *str2);
  *  编码
  **************************************/
 
-- (NSString *)URLEncodedString;
-
-- (NSString *)URLDecodedString;
+//- (NSString *)URLEncodedString;
+//
+//- (NSString *)URLDecodedString;
 
 /***************************************
  *  检验
