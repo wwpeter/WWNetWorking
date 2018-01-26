@@ -27,6 +27,12 @@ NSString * const kWZBMyPersonCenterShare = @"kWZBMyPersonCenterShare";
 NSString * const kWZBLoginAgainRedMoneyNotification = @"kWZBLoginAgainRedMoneyNotification";
 NSString * const kWZBBuyFinanacialAmount = @"kWZBBuyFinanacialAmount";
 
+NSString * const kWZBDepositAccountCode = @"fund/fundaccount/bindcardconfirm";
+NSString * const kWZBDepositAccount = @"fund/fundaccount/bindcard";
+NSString * const kWZBDepositRecharge = @"fund/fundaccount/recharge";
+NSString * const kWZBDepositRechargeCode = @"fund/fundaccount/rechargeconfirm";
+NSString * const kWZBDepositUserDetail = @"fund/fundaccount";
+NSString * const kWZBDepositWithdraw = @"fund/fundaccount/withdraw";
 NSString *const kWZBPurchaseSuccessNotification = @"WZBPurchaseSuccessNotification";
 NSString *const kWZBFinancialList = @"product/v3.1.2/pagelist";
 NSString *const kWZBLogin = @"user/login";

@@ -8,10 +8,7 @@
 
 #import "AZService.h"
 
-//#define kServerAddres @"http://192.168.16.21/wzb2/app3/"
-#define kServerAddres @"https://app.52wzb.com/wzb2/app3/"
-//#define kServerAddres @"https://dev.52wzb.com/wzb2/app3/"
-//#define kServerAddres @"https://pre.52wzb.com/wzb2/app3/"
+#define kServerAddres @"https://dev.52wzb.com/wzb2/app3/"
 
 @interface WZBService : AZService<AZServiceProtocol>
 

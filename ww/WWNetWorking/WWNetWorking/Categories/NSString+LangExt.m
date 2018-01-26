@@ -63,6 +63,33 @@ BOOL isEqualString(NSString *str1, NSString *str2)
  *  编码
  **************************************/
 
+- (NSString *)URLEncodedString
+{
+    CFStringRef encodedCFString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                          (__bridge CFStringRef) self,
+                                                                          nil,
+                                                                          CFSTR("?!@#$^&%*+,:;='\"`<>()[]{}/\\| "),
+                                                                          kCFStringEncodingUTF8);
+    
+    NSString *encodedString = [[NSString alloc] initWithString:(__bridge_transfer NSString*) encodedCFString];
+    
+    if(!encodedString)
+        encodedString = @"";
+    
+    return encodedString;
+}
+
+- (NSString *)URLDecodedString
+{
+    CFStringRef decodedCFString = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
+                                                                                          (__bridge CFStringRef) self,
+                                                                                          CFSTR(""),
+                                                                                          kCFStringEncodingUTF8);
+    
+    // We need to replace "+" with " " because the CF method above doesn't do it
+    NSString *decodedString = [[NSString alloc] initWithString:(__bridge_transfer NSString*) decodedCFString];
+    return (!decodedString) ? @"" : [decodedString stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+}
 
 /***************************************
  * 功能：校验
@@ -71,12 +98,16 @@ BOOL isEqualString(NSString *str1, NSString *str2)
 
 - (BOOL)isValidChinesePhoneNumber
 {
-    return YES;
+    NSString *numberRegex = @"17[0-9]{9}|13[0-9]{9}|15[0-9]{9}|18[0-9]{9}|145[0-9]{8}|147[0-9]{8}";
+    NSPredicate *numberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberRegex];
+    return [numberTest evaluateWithObject:self];
 }
 
 - (BOOL)validUsername
 {
-    return YES;
+    NSString *passCodeRegex = @"[a-zA-Z0-9_-]{4,30}";
+    NSPredicate *passCodeTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", passCodeRegex];
+    return [passCodeTest evaluateWithObject:self];
 }
 
 - (BOOL)validPassword
@@ -112,6 +143,37 @@ BOOL isEqualString(NSString *str1, NSString *str2)
 
 - (BOOL)validIDCard
 {
+    // 如果身份证不是18位
+    if (self.length != 18)
+        return NO;
+    
+    // 获取前17位
+    NSString *idCard17 = [self substringToIndex:17];
+    // 获取第18位
+    NSString *idCard18Code = [self substringFromIndex:17];
+    
+    NSString *checkCode = @"";
+    
+    if ([idCard17 isDigital]) {
+        NSInteger sum17 = 0;
+        int power[] = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2 };
+        if (idCard17.length == 17) {
+            for (int i = 0; i < idCard17.length; i++) {
+                for (int j = 0; j <idCard17.length; j++) {
+                    if (i == j) {
+                        NSInteger temp = [[idCard17 substringWithRange:NSMakeRange(i, 1)] integerValue] * power[j];
+                        sum17 = sum17 + temp;
+                    }
+                }
+            }
+        }
+        
+        checkCode = @[@"1", @"0", @"x", @"9", @"8", @"7", @"6", @"5", @"4", @"3", @"2"][sum17 % 11];
+        
+        if (![idCard18Code.uppercaseString isEqualToString:checkCode.uppercaseString])
+            return NO;
+    }
+    
     return YES;
 }
 
@@ -169,10 +231,35 @@ NSInteger nickNameSort(id user1, id user2, void *context)
     return  [u1 localizedCompare:u2];
 }
 - (NSString *)isPhone {
-    return @"sfaf";
+    NSString *cm = @"^((13[4-9])|(147)|(15[0-2,7-9])|(18[2-3,7-8]))\\d{8}$";
+    NSString *cu = @"^((13[0-2])|(145)|(15[5-6])|(186))\\d{8}$";
+    NSString *ct = @"^((133)|(153)|(18[0,9]))\\d{8}$";
+    NSPredicate *predicate1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", cm];
+    NSPredicate *predicate2 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", cu];
+    NSPredicate *predicate3 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", ct];
+    if ([predicate1 evaluateWithObject:self]) {
+        return @"移动";
+    }else if ([predicate2 evaluateWithObject:self]) {
+        return @"联通";
+    }else if ([predicate3 evaluateWithObject:self]) {
+        return @"电信";
+    } else {
+        return @"不知道！";
+    }
 }
 - (NSString *)getStrDate:(NSString *)dateStr getControlDate:(NSString *)conStr {
-
+//    if (dateStr&&conStr) {
+//        NSArray *arr = [dateStr componentsSeparatedByString:@"-"];
+//        CGFloat day = [arr[2] integerValue];
+//        CGFloat mouth = [arr[1] integerValue];
+//        CGFloat year = [arr[0] integerValue];
+//        CGFloat conDate = [conStr integerValue];
+//        
+//        、、CGFloat b = da/
+//        
+//        
+//        return str;
+//    }
     return nil;
 }
 + (NSString *)ConvertStrToTime:(NSString *)timeStr {    
